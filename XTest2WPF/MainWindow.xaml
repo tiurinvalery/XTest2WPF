@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XTest2WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600
+        Title="XTest" Height="600
         " Width="800" FontFamily="Yu Gothic UI" Padding="20" Background="#FFECF6FF">
 
     <Grid>
