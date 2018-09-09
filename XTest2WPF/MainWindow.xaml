@@ -4,16 +4,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XTest2WPF"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="XTest" Height="600
-        " Width="800" FontFamily="Yu Gothic UI" Padding="20" Background="#FFECF6FF">
+        " Width="800" FontFamily="Yu Gothic UI" Padding="20" Background="#FFECF6FF" Icon="img/icons/main-icon.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
             <RowDefinition/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
-        <TreeView FontSize="20" Grid.Row="0" Background="#FFEBF6F6">
+        <StackPanel Grid.Row="0" Background="#FF8D5697" MouseDown="StackPanel_MouseDown">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Image Width="20" HorizontalAlignment="Left" Source="/img/icons/icon.png" Margin="0 0 710 0"></Image>
+                <Button Name="cutDownBtn" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#ffffff" Click="cutDownBtn_Click">
+                    <materialDesign:PackIcon Kind="WindowMinimize"></materialDesign:PackIcon>
+                </Button>
+                <Button Name="powerBtn" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#ffffff" Click="powerBtn_Click">
+                    <materialDesign:PackIcon Kind="Power"></materialDesign:PackIcon>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <TreeView FontSize="20" Grid.Row="1" Background="#FFEBF6F6">
             <Label>Теория информации и кодирования</Label>
             <TreeViewItem>
                 <TreeViewItem.Header>
@@ -216,7 +229,7 @@
                 </TreeViewItem>
             </TreeViewItem>
         </TreeView>
-        <StackPanel Grid.Row="1" Width="600" Margin="20" Orientation="Horizontal">
+        <StackPanel Grid.Row="2" Width="600" Margin="20" Orientation="Horizontal">
             <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -227,10 +240,41 @@
                             </Trigger>
                         </Style.Triggers>
                     </Style>
-                </Button.Style>Теория</Button>
-            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">Отчет</Button>
-            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">Обучение</Button>
-            <Button Width="120" FontSize="22" Cursor="Hand" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">Тест</Button>
+                </Button.Style>
+                Теория</Button>
+            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFBDBDE8"/>
+                                <Setter Property="Foreground" Value="#FFF9F2F2"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style> Отчет</Button>
+            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFBDBDE8"/>
+                                <Setter Property="Foreground" Value="#FFF9F2F2"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style> Обучение</Button>
+            <Button Width="120" FontSize="22" Cursor="Hand" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFBDBDE8"/>
+                                <Setter Property="Foreground" Value="#FFF9F2F2"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style> Тест</Button>
         </StackPanel>
     </Grid>
 </Window>
