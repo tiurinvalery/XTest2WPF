@@ -115,8 +115,8 @@
     <Folder Include="Forms\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\icons\icon.png" />
     <Resource Include="img\icons\main-icon.png" />
+    <Resource Include="img\icons\icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

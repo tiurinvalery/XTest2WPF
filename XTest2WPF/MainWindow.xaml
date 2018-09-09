@@ -11,29 +11,29 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="36"/>
             <RowDefinition/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Background="#FF8D5697" MouseDown="StackPanel_MouseDown">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button Width="24" Height="24" Cursor="Hand" HorizontalAlignment="Left" Margin="0 0 4 0" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="36">
+                <Button Name="aboutUsBtn" Width="26" Height="26" Cursor="Hand" Margin="0 0 4 0" Background="{x:Null}" BorderBrush="{x:Null}">
                     <Image Source="/img/icons/icon.png"></Image>
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#FF3A3A3A"/>
+                                    <Setter Property="Background" Value="#FF5E4566"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
                     </Button.Style>
                 </Button>
-                <Label Margin="0 0 650 0" Foreground="#ffffff">about us</Label>
-                <Button Name="cutDownBtn" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#ffffff" Click="cutDownBtn_Click">
+                <Label Margin="0 0 640 0" Foreground="#ffffff" VerticalAlignment="Center">about us</Label>
+                <Button Name="cutDownBtn" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="24" Height="24" Margin="0 0 6 0" Background="#FFC44D4D" BorderBrush="{x:Null}" Foreground="#ffffff" Click="cutDownBtn_Click">
                     <materialDesign:PackIcon Kind="WindowMinimize"></materialDesign:PackIcon>
                 </Button>
-                <Button Name="powerBtn" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#ffffff" Click="powerBtn_Click">
+                <Button Name="powerBtn" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="24" Height="24" Margin="0 0 8 0" Background="#FFC44D4D" BorderBrush="{x:Null}" Foreground="#ffffff" Click="powerBtn_Click">
                     <materialDesign:PackIcon Kind="Power"></materialDesign:PackIcon>
                 </Button>
             </StackPanel>
@@ -242,7 +242,7 @@
             </TreeViewItem>
         </TreeView>
         <StackPanel Grid.Row="2" Width="600" Margin="20" Orientation="Horizontal">
-            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
+            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="{x:Null}" FontWeight="Bold">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Style.Triggers>
@@ -253,8 +253,11 @@
                         </Style.Triggers>
                     </Style>
                 </Button.Style>
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFADC8C8" BlurRadius="10" ShadowDepth="0" />
+                </Button.Effect>
                 Теория</Button>
-            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
+            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="{x:Null}" FontWeight="Bold">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Style.Triggers>
@@ -264,8 +267,12 @@
                             </Trigger>
                         </Style.Triggers>
                     </Style>
-                </Button.Style> Отчет</Button>
-            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
+                </Button.Style>
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFADC8C8" BlurRadius="10" ShadowDepth="0" />
+                </Button.Effect>
+                Отчет</Button>
+            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="{x:Null}" FontWeight="Bold">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Style.Triggers>
@@ -275,8 +282,12 @@
                             </Trigger>
                         </Style.Triggers>
                     </Style>
-                </Button.Style> Обучение</Button>
-            <Button Width="120" FontSize="22" Cursor="Hand" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
+                </Button.Style>
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFADC8C8" BlurRadius="10" ShadowDepth="0" />
+                </Button.Effect>
+                Обучение</Button>
+            <Button Width="120" FontSize="22" Cursor="Hand" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="{x:Null}" FontWeight="Bold">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Style.Triggers>
@@ -286,7 +297,11 @@
                             </Trigger>
                         </Style.Triggers>
                     </Style>
-                </Button.Style> Тест</Button>
+                </Button.Style>
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFADC8C8" ShadowDepth="0" />
+                </Button.Effect>
+                Тест</Button>
         </StackPanel>
     </Grid>
 </Window>
