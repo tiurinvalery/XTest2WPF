@@ -5,8 +5,232 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XTest2WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600
+        " Width="800" FontFamily="Yu Gothic UI" Padding="20" Background="#FFECF6FF">
+
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <TreeView FontSize="20" Grid.Row="0" Background="#FFEBF6F6">
+            <Label>Теория информации и кодирования</Label>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/icons/folder.png" Width="22" Margin="0 0 8 0"/>
+                        <TextBlock>Систематические коды</TextBlock>
+                    </StackPanel>
+                </TreeViewItem.Header>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код Эллайеса</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код Варшамова</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Коды Рида-Маллера</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код Хэмминга</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/icons/folder.png" Width="22" Margin="0 0 8 0"/>
+                        <TextBlock>Циклические коды</TextBlock>
+                    </StackPanel>
+                </TreeViewItem.Header>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Коды Абромсона</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Коды Файра</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код Хэмминга</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код БЧХ</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/icons/folder.png" Width="22" Margin="0 0 8 0"/>
+                        <TextBlock>Недвоичные коды</TextBlock>
+                    </StackPanel>
+                </TreeViewItem.Header>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Первичные недвоичные коды</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код с проверкой по модулю q</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код с простым повторением</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Итеративный код</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="img/icons/folder.png" Width="22" Margin="0 0 8 0"/>
+                        <TextBlock>Прочие коды</TextBlock>
+                    </StackPanel>
+                </TreeViewItem.Header>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код Грея</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Двоично-десятичный код</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код Бергера</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код Шеннона-Фано</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Код Хаффмена</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Коды-спутники</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Количество информации и энтропия</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Рекурентный код</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="img/icons/file.png" Width="20" Margin="0 0 5 0"/>
+                            <TextBlock>Кнальные коды</TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+        <StackPanel Grid.Row="1" Width="600" Margin="20" Orientation="Horizontal">
+            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFBDBDE8"/>
+                                <Setter Property="Foreground" Value="#FFF9F2F2"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>Теория</Button>
+            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">Отчет</Button>
+            <Button Width="120" Margin="0 0 40 0" Cursor="Hand" FontSize="22" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">Обучение</Button>
+            <Button Width="120" FontSize="22" Cursor="Hand" Foreground="#FF3D3DAA" Background="#FFF9F2F2" BorderBrush="#FFBB8585" FontWeight="Bold">Тест</Button>
+        </StackPanel>
     </Grid>
 </Window>
