@@ -299,7 +299,7 @@
                     </Style>
                 </Button.Style>
                 <Button.Effect>
-                    <DropShadowEffect Color="#FFADC8C8" ShadowDepth="0" />
+                    <DropShadowEffect Color="#FFADC8C8" BlurRadius="10" ShadowDepth="0" />
                 </Button.Effect>
                 Тест</Button>
         </StackPanel>
