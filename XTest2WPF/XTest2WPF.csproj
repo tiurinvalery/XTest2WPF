@@ -65,6 +65,7 @@
     <Compile Include="Algorithms\Algoritm.cs" />
     <Compile Include="Algorithms\AlgoritmDTO.cs" />
     <Compile Include="Algorithms\EliasCode.cs" />
+    <Compile Include="Algorithms\VarshamovCode.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
