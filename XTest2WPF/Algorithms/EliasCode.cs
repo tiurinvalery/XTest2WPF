@@ -8,24 +8,66 @@ namespace XTest2WPF.Algorithms
 {
 	class EliasCode
 	{
-		public static void Coding()
+		/// <summary>
+		/// Кодирование:
+		/// //1) Вывести массив из метода FirstArr();
+			//int[,] c = FirstArr();//начальный массив
+			//Console.WriteLine();
+
+			////2) Вызвать метод Coding передав в него массив с. Это нужно для сравнения результатов
+			//int[,] codingRes = Coding(c);//правильный результат
+			//Console.WriteLine();
+
+			////3) Собрать все ответы пользователя и добавить в массивы 
+			//int[] stolb = new int[5] { 0, 1, 1, 0, 1 };//данные по вертикали
+			//int[] strok = new int[5] { 1, 0, 1, 1, 1 };//данные по горизонтали
+
+			////4) Вызвать метод CodingWithUser который принимает массивы с ответами и начальный массив
+			//int[,] userRes = CodingWithUser(stolb, strok, c);
+			//Console.WriteLine();
+
+			////5) Сравнить два массива
+			////Основная проблема потому что хз как это сделать, метод ниже не работает
+			//bool isEqual = false;
+			//for (int i = 0; i < 6; i++)
+			//    for (int j = 0; j < 6; j++)
+			//    {
+			//		if (codingRes[i, j] == userRes[i, j])
+			//		{
+			//			isEqual = true;
+			//		}
+			//		else
+			//		{
+			//			isEqual = false;
+			//		}
+			//     }
+			//if (isEqual)
+			//{
+			//	Console.WriteLine("Fine");
+			//}
+			//else
+			//{
+			//	Console.WriteLine("Bad");
+			//}
+			//Console.ReadKey();
+		/// </summary>
+		public static int[,] FirstArr()
 		{
-			int[,] p = new int[6, 6];
 			int[,] c = new int[6, 6];
 			Random ran = new Random();
-			for (int i = 0; i < 6; i++)
+			for (int i = 0; i < 5; i++)
 			{
-				for (int j = 0; j < 6; j++)
+				for (int j = 0; j < 5; j++)
 				{
 					c[i, j] = ran.Next(0, 2);
-					c[i, 5] = -1;
-					c[5, j] = -1;
-					Console.Write("{0}\t", c[i, j]);
 				}
-				Console.WriteLine();
 			}
+			return c;
+		}
+		public static int[,] Coding(int[,] c)
+		{
+			int[,] p = new int[6, 6];
 			p = c;
-			Console.WriteLine();
 			for (int i = 0; i < 6; i++)
 			{
 				int resStr = Sum(p[i, 0], p[i, 1], p[i, 2], p[i, 3], p[i, 4]);
@@ -48,28 +90,32 @@ namespace XTest2WPF.Algorithms
 					{
 						p[5, j] = 0;
 					}
-					Console.Write("{0}\t", p[i, j]);
 				}
-				Console.WriteLine();
 			}
-			Console.ReadKey();
+			return p;
+		}
+		public static int[,] CodingWithUser(int[] stolb, int[] strok, int[,] c)
+		{
+			int[,] p = new int[6, 6];
+			p = c;
+			p[0, 5] = stolb[0];
+			p[1, 5] = stolb[1];
+			p[2, 5] = stolb[2];
+			p[3, 5] = stolb[3];
+			p[4, 5] = stolb[4];
+
+			p[5, 0] = strok[0];
+			p[5, 1] = strok[1];
+			p[5, 2] = strok[2];
+			p[5, 3] = strok[3];
+			p[5, 4] = strok[4];
+			return p;
 		}
 		public static void Decoding()
 		{
 			int[,] p = new int[6, 6];
-			int[,] c = new int[6, 6];
 			Random ran = new Random();
-			for (int i = 0; i < 6; i++)
-			{
-				for (int j = 0; j < 6; j++)
-				{
-					c[i, j] = ran.Next(0, 2);
-					c[i, 5] = -1;
-					c[5, j] = -1;
-				}
-			}
-			p = c;
-			Console.WriteLine();
+			p = FirstArr();
 			for (int i = 0; i < 6; i++)
 			{
 				int resStr = Sum(p[i, 0], p[i, 1], p[i, 2], p[i, 3], p[i, 4]);
@@ -92,11 +138,8 @@ namespace XTest2WPF.Algorithms
 					{
 						p[5, j] = 0;
 					}
-					Console.Write("{0}\t", p[i, j]);
 				}
-				Console.WriteLine();
 			}
-			Console.WriteLine();
 			Random newRand = new Random();
 			bool val = true;
 			for (int i = 0; i < 6; i++)
@@ -115,13 +158,9 @@ namespace XTest2WPF.Algorithms
 						}
 						val = false;
 					}
-					Console.Write("{0}\t", p[i, j]);
 				}
-				Console.WriteLine();
 			}
-			Console.WriteLine();
 			CheckError(p);
-			Console.ReadKey();
 		}
 		public static int Sum(int first, int second, int third, int fourth, int fifth)
 		{
