@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XTest.Core", "XTest.Core\XTest.Core.csproj", "{E64A45FE-D9A0-448A-948C-A93FF44D2369}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XTest.Lang", "XTest.Lang\XTest.Lang.csproj", "{31CEC5EC-386A-4223-B693-26B5668F26EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XTest.UnitTests", "XTest.UnitTests\XTest.UnitTests.csproj", "{3FE2C3CA-E112-4B52-BA87-32E03E1D074E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XTest.UI", "XTest.UI\XTest.UI.csproj", "{9745E3C7-44D1-4B58-B246-97BAA75043B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hurricane.PluginAPI", "Hurricane.PluginAPI\Hurricane.PluginAPI.csproj", "{6680C804-3260-450F-8D2B-42484BC39FF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hurricane", "Hurricane\Hurricane.csproj", "{8C1DA3B1-DB8E-4F06-849D-CCF71FA1929F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E64A45FE-D9A0-448A-948C-A93FF44D2369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E64A45FE-D9A0-448A-948C-A93FF44D2369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E64A45FE-D9A0-448A-948C-A93FF44D2369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E64A45FE-D9A0-448A-948C-A93FF44D2369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31CEC5EC-386A-4223-B693-26B5668F26EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CEC5EC-386A-4223-B693-26B5668F26EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CEC5EC-386A-4223-B693-26B5668F26EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CEC5EC-386A-4223-B693-26B5668F26EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE2C3CA-E112-4B52-BA87-32E03E1D074E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE2C3CA-E112-4B52-BA87-32E03E1D074E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE2C3CA-E112-4B52-BA87-32E03E1D074E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE2C3CA-E112-4B52-BA87-32E03E1D074E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9745E3C7-44D1-4B58-B246-97BAA75043B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9745E3C7-44D1-4B58-B246-97BAA75043B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9745E3C7-44D1-4B58-B246-97BAA75043B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9745E3C7-44D1-4B58-B246-97BAA75043B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6680C804-3260-450F-8D2B-42484BC39FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6680C804-3260-450F-8D2B-42484BC39FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6680C804-3260-450F-8D2B-42484BC39FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6680C804-3260-450F-8D2B-42484BC39FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C1DA3B1-DB8E-4F06-849D-CCF71FA1929F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C1DA3B1-DB8E-4F06-849D-CCF71FA1929F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C1DA3B1-DB8E-4F06-849D-CCF71FA1929F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C1DA3B1-DB8E-4F06-849D-CCF71FA1929F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0870D08B-5AEE-4CBA-851A-08EB923D9A31}
+	EndGlobalSection
+EndGlobal

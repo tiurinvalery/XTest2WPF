@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0517E658-1E25-4648-873A-A61291AD30E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XTest.Bl.Core</RootNamespace>
+    <AssemblyName>XTest.Bl.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\Entities\Common\IDataResult.cs" />
+    <Compile Include="Abstract\Entities\Common\IResult.cs" />
+    <Compile Include="Abstract\Entities\Config\ConfigTest.cs" />
+    <Compile Include="Abstract\Entities\IBaseTestEntity.cs" />
+    <Compile Include="Abstract\Entities\IMarkEntity.cs" />
+    <Compile Include="Abstract\Entities\IQuestionAnswerEntity.cs" />
+    <Compile Include="Abstract\Entities\IQuestionEntity.cs" />
+    <Compile Include="Abstract\Entities\ITestAnswerEntity.cs" />
+    <Compile Include="Abstract\Entities\ITestEntity.cs" />
+    <Compile Include="Abstract\IAnswerCheker.cs" />
+    <Compile Include="Abstract\Processors\AbstractFactory.cs" />
+    <Compile Include="Abstract\Processors\IGenerateProcess.cs" />
+    <Compile Include="Const\Enums\CodeType.cs" />
+    <Compile Include="Const\Enums\CodingType.cs" />
+    <Compile Include="Const\Enums\GroupType.cs" />
+    <Compile Include="Const\Enums\QuestionType.cs" />
+    <Compile Include="Const\Enums\StateType.cs" />
+    <Compile Include="Const\Enums\TestType.cs" />
+    <Compile Include="Entities\BaseTestEntity.cs" />
+    <Compile Include="Entities\BaseValue.cs" />
+    <Compile Include="Entities\Common\DataResult.cs" />
+    <Compile Include="Entities\Common\Result.cs" />
+    <Compile Include="Entities\Const\Enums\CodeType.cs" />
+    <Compile Include="Entities\Const\Enums\CodingType.cs" />
+    <Compile Include="Entities\Const\Enums\GroupType.cs" />
+    <Compile Include="Entities\Const\Enums\QuestionType.cs" />
+    <Compile Include="Entities\Const\Enums\StateType.cs" />
+    <Compile Include="Entities\Const\Enums\TestType.cs" />
+    <Compile Include="Entities\History\AnswerHistoryEntity.cs" />
+    <Compile Include="Entities\History\CodingHistory.cs" />
+    <Compile Include="Entities\History\MainHistoryEntity.cs" />
+    <Compile Include="Entities\QuestionEntity.cs" />
+    <Compile Include="Entities\TestEntity.cs" />
+    <Compile Include="Holders\Testholder.cs" />
+    <Compile Include="Processors\AnswerCheker.cs" />
+    <Compile Include="Processors\Encoders\AbramsonCoder.cs" />
+    <Compile Include="Processors\Encoders\BaseEncoderProcess.cs" />
+    <Compile Include="Processors\Encoders\BCHCoder.cs" />
+    <Compile Include="Processors\Encoders\BergerCoder.cs" />
+    <Compile Include="Processors\Encoders\ChannelCoder.cs" />
+    <Compile Include="Processors\Encoders\DDC.cs" />
+    <Compile Include="Processors\Encoders\EasyReturnCoder.cs" />
+    <Compile Include="Processors\Encoders\EllieasCoder.cs" />
+    <Compile Include="Processors\Encoders\EntrophyCoder.cs" />
+    <Compile Include="Processors\Encoders\FairaCoder.cs" />
+    <Compile Include="Processors\Encoders\GrayCoder.cs" />
+    <Compile Include="Processors\Encoders\HaphmanaCoder.cs" />
+    <Compile Include="Processors\Encoders\HemmingCycleCode.cs" />
+    <Compile Include="Processors\Encoders\IterativeCoder.cs" />
+    <Compile Include="Processors\Encoders\ModulationCheckCoder.cs" />
+    <Compile Include="Processors\Encoders\ModuleCodeQ.cs" />
+    <Compile Include="Processors\Encoders\PrimaryNonDualOnes.cs" />
+    <Compile Include="Processors\Encoders\RecyrentCoder.cs" />
+    <Compile Include="Processors\Encoders\RidaMalleraCoder.cs" />
+    <Compile Include="Processors\Encoders\SatelliteСodes.cs" />
+    <Compile Include="Processors\Encoders\ShenonPhanoCoder.cs" />
+    <Compile Include="Processors\Encoders\TheSystematicCodeOfHemming.cs" />
+    <Compile Include="Processors\Encoders\VarshamovaCoder.cs" />
+    <Compile Include="Processors\GenerateProcess.cs" />
+    <Compile Include="Processors\HistoryProcess.cs" />
+    <Compile Include="Processors\SerializerProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

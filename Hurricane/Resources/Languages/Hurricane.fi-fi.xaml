@@ -1,0 +1,365 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="DateFormat">dd.MM.yyyy HH:mm</system:String>
+    <system:String x:Key="Search">Etsi...</system:String>
+    <system:String x:Key="PreviousTrack">edellinen kappale</system:String>
+    <system:String x:Key="NextTrack">seuraava kappale</system:String>
+    <system:String x:Key="NewPlaylist">uusi soittolista</system:String>
+    <system:String x:Key="AddFiles">lisää tiedostot</system:String>
+    <system:String x:Key="AddDirectories">lisää kansio</system:String>
+    <system:String x:Key="NameOfPlaylist">soittolistan nimi:</system:String>
+    <system:String x:Key="Create">laatia</system:String>
+    <system:String x:Key="Cancel">keskeyttää</system:String>
+    <system:String x:Key="FilesGetImported">tuonti ({0} kohteesta {1})</system:String>
+    <system:String x:Key="Reset">paluu</system:String>
+    <system:String x:Key="AddTracks">lisää kappale</system:String>
+    <system:String x:Key="Play">pelata</system:String>
+    <system:String x:Key="Pause">tauko</system:String>
+    <system:String x:Key="FileInfo">tiedoston info</system:String>
+    <system:String x:Key="FileLocation">sijainti</system:String>
+    <system:String x:Key="Remove">poistaa</system:String>
+    <system:String x:Key="Del">Del</system:String>
+    <system:String x:Key="SelectedFiles">valitse tiedostot</system:String>
+    <system:String x:Key="SelectedFolder">valitse kansio</system:String>
+    <system:String x:Key="RemovePlaylist">poista soittolista</system:String>
+    <system:String x:Key="RemoveDuplicates">poista kaksoiskappaleet</system:String>
+    <system:String x:Key="NoArtist">ei teitailija</system:String>
+    <system:String x:Key="NowPlaying"> nyt toistetaan</system:String>
+    <system:String x:Key="Presets">malleja</system:String>
+    <system:String x:Key="Bass">basso</system:String>
+    <system:String x:Key="BassExtreme">basso erittäin</system:String>
+    <system:String x:Key="BassAndHeights">basso ja korkeudet</system:String>
+    <system:String x:Key="Heights">korkeudet</system:String>
+    <system:String x:Key="Classic">klassinen</system:String>
+    <system:String x:Key="Dance">tanssi</system:String>
+    <system:String x:Key="Rock">rock</system:String>
+    <system:String x:Key="Techno">techno</system:String>
+    <system:String x:Key="Pop">pop</system:String>
+    <system:String x:Key="SoftBass">pehmeä basso</system:String>
+    <system:String x:Key="SoftHeights">pehmeä korkeudet</system:String>
+    <system:String x:Key="RemoveTracks">poistaa kappaleita</system:String>
+    <system:String x:Key="RemoveTracksMessage">Oletko varma, että haluat poistaa {0} kappaleita soittolistalta?</system:String>
+    <system:String x:Key="RemoveTrackMessage">Oletko varma, että haluat poistaa kappaleen '{0}' soittolistan?</system:String>
+    <system:String x:Key="Tracks">kappaleen</system:String>
+    <system:String x:Key="Error">virhe</system:String>
+    <system:String x:Key="ReallyDeletePlaylist">Oletko varma, että haluat poistaa soittolistan '{0}' ?</system:String>
+    <system:String x:Key="CantDeletePlaylist">Soittolista ei voida poistaa, koska se on vain yksi.</system:String>
+    <system:String x:Key="RenamePlaylist">nimeä soittolista</system:String>
+    <system:String x:Key="Rename">nimetä uudelleen</system:String>
+    <system:String x:Key="RemoveDuplicateTracks">Oletko varma, että haluat poistaa kaksoiskappaleet?</system:String>
+    <system:String x:Key="TracksRemoved">{0} kappaleet on poistettu.</system:String>
+    <system:String x:Key="NoDuplicatesFound">Ei kaksoiskappaleet löytyi.</system:String>
+    <system:String x:Key="SearchingForDuplicates">Etsin kaksoiskappaleet...</system:String>
+    <system:String x:Key="Settings">Налаштування</system:String>
+    <system:String x:Key="About">Про нас</system:String>
+    <system:String x:Key="Close">Закрити</system:String>
+    <system:String x:Key="Apply">Sovelleta</system:String>
+    <system:String x:Key="Playback">toisto</system:String>
+    <system:String x:Key="Device">laite</system:String>
+    <system:String x:Key="SampleSourceBitrate">näytelähdettä bitrate</system:String>
+    <system:String x:Key="Samplerate">näytteenottotaajuus</system:String>
+    <system:String x:Key="ShowMagicArrowBelowCursor">magic arrow suoraan kohdistinsana</system:String>
+    <system:String x:Key="DefaultSamplerate">(näytteenottotaajuus uutetaan)</system:String>
+    <system:String x:Key="Language">Мова</system:String>
+    <system:String x:Key="Title">Otsikko</system:String>
+    <system:String x:Key="Artist">Artisti</system:String>
+    <system:String x:Key="Album">Albumi</system:String>
+    <system:String x:Key="Genre">Lajityyppi</system:String>
+    <system:String x:Key="Year">Vuosi</system:String>
+    <system:String x:Key="Format">Formaatti</system:String>
+    <system:String x:Key="Duration">Kesto</system:String>
+    <system:String x:Key="Quality">Laatu</system:String>
+    <system:String x:Key="FileSize">Tiedoston koko</system:String>
+    <system:String x:Key="Filename">Tiedostonnimi</system:String>
+    <system:String x:Key="Folder">Kansio</system:String>
+    <system:String x:Key="Added">lisätään</system:String>
+    <system:String x:Key="Played">pelattiin</system:String>
+    <system:String x:Key="Never">ei koskaan</system:String>
+    <system:String x:Key="AboutCopyright">Tekijänoikeus © 2014-2015 Alkaline. Kaikki oikeudet pidätetään.</system:String>
+    <system:String x:Key="AboutThanks1">Kiitos kaikki lahjakas luoja kuvat ja kirjastoja, jotka on mainittu edellä.</system:String>
+    <system:String x:Key="AboutThanks2">Kiitos kaunis tyttö minun koululuokan, joka antoi minulle inspiraation nimi. (Tyttö ei tiedä.)</system:String>
+    <system:String x:Key="AboutThanks3">Kiitos {0}, {1} ja {2} (kehittäjä CSCoreja) avuliaasta tukea.</system:String>
+    <system:String x:Key="AboutThanks4">Kiitos {0} yhteisöä, testata mietinnöstä virheet ja niiden hyviä ideoita.</system:String>
+    <system:String x:Key="Website">Verkkosivusto</system:String>
+    <system:String x:Key="Licence">Lisenssi</system:String>
+    <system:String x:Key="Libraries">Kirjastot</system:String>
+    <system:String x:Key="Images">Grafiikka</system:String>
+    <system:String x:Key="Thanks">Kiitos</system:String>
+    <system:String x:Key="Notifications">Kuulutusten</system:String>
+    
+    <system:String x:Key="Disabled">Sammutettu</system:String>
+    <system:String x:Key="Top">Ylin</system:String>
+    <system:String x:Key="RightBottom">Alhaalla oikealla</system:String>
+    <system:String x:Key="TrackInformation">raitainformaatio</system:String>
+    <system:String x:Key="DisableNotificationsInGame">Varoitukset pois aikana koko näytön sovellus.</system:String>
+    <system:String x:Key="ReloadTrackInfo">Päivitä raitainformaatio</system:String>
+    <system:String x:Key="RemoveMissingTracks">Poista puuttuvat kappaleet</system:String>
+    <system:String x:Key="LoadTrackInformation">Ladataan ({0} kohteesta {1})</system:String>
+    <system:String x:Key="DeleteAllMissingTracks">Oletko varma, että haluat poistaa puuttuvat kappaleet soittolistan?</system:String>
+    <system:String x:Key="IncludeSubfolder">Sisällytä alikansiot</system:String>
+    <system:String x:Key="Add">Lisätä</system:String>
+    <system:String x:Key="Theme">Suunnittelu</system:String>
+    <system:String x:Key="Amber">meripihka</system:String>
+    <system:String x:Key="Blue">Синій</system:String>
+    <system:String x:Key="Brown">Коричневий</system:String>
+    <system:String x:Key="Cobalt">koboltti</system:String>
+    <system:String x:Key="Crimson">purppura</system:String>
+    <system:String x:Key="Cyan">syaani</system:String>
+    <system:String x:Key="Emerald">smaragdi</system:String>
+    <system:String x:Key="Green">Зелений</system:String>
+    <system:String x:Key="Indigo">indigo</system:String>
+    <system:String x:Key="Lime">kalkki</system:String>
+    <system:String x:Key="Magenta">magenta</system:String>
+    <system:String x:Key="Mauve">malvanvärinen</system:String>
+    <system:String x:Key="Olive">oliivi</system:String>
+    <system:String x:Key="Orange">Оранжевий</system:String>
+    <system:String x:Key="Pink">Розовий</system:String>
+    <system:String x:Key="Purple">lila</system:String>
+    <system:String x:Key="Red">Червоний</system:String>
+    <system:String x:Key="Sienna">siena</system:String>
+    <system:String x:Key="Steel">teräs</system:String>
+    <system:String x:Key="Taupe">harmaanruskean</system:String>
+    <system:String x:Key="Teal">tavi</system:String>
+    <system:String x:Key="Violet">violetti</system:String>
+    <system:String x:Key="Yellow">keltainen</system:String>
+    <system:String x:Key="UpdateChangelogText">muutokset versio {0} (julkaistu {1})</system:String>
+    <system:String x:Key="UpdatesAvailable">päivitys saatavilla</system:String>
+    <system:String x:Key="CurrentVersion">nykyiseen versioon:</system:String>
+    <system:String x:Key="NewVersion">uusi versioon:</system:String>
+    <system:String x:Key="Changelog">muutosloki:</system:String>
+    <system:String x:Key="Size">koko:</system:String>
+    <system:String x:Key="Update">Päivitä</system:String>
+    <system:String x:Key="NewUpdateAvailable">Päivitys saatavilla!</system:String>
+    <system:String x:Key="ExceptionTitle">Hurricane - Virhe</system:String>
+    <system:String x:Key="ExceptionWindowTitle">Hemmetin pas.... On tapahtunut virhe ja Hurricane jouduttiin sulkemaan. Pahoittelemme häiriötä.</system:String>
+    <system:String x:Key="ExceptionText">Raportti on laadittu ja on valmis lähettämään. Hän on luottamuksellista, ja on vain vianetsintään.</system:String>
+    <system:String x:Key="ExceptionNote">Valinnainen kuvaus virheiden johtaneista tapahtumista.</system:String>
+    <system:String x:Key="Exception">Virhe</system:String>
+    <system:String x:Key="SendExceptionAndClose">Lähetä virhe ja sulje</system:String>
+    <system:String x:Key="Queue">jono</system:String>
+    <system:String x:Key="AddToQueue">Lisää jonoon</system:String>
+    <system:String x:Key="RemoveFromQueue">Poista jonosta</system:String>
+    <system:String x:Key="ClearQueue">Tyhjä jono</system:String>
+    <system:String x:Key="QueueManager">Jono-manager</system:String>
+    <system:String x:Key="CtrlIns">Ctrl+Ins</system:String>
+    <system:String x:Key="Ins">Ins</system:String>
+    <system:String x:Key="CtrlQ">Ctrl+Q</system:String>
+    <system:String x:Key="Number">Numero</system:String>
+    <system:String x:Key="Playlist">Soittolista</system:String>
+    <system:String x:Key="TotalTime">Aikojen</system:String>
+    <system:String x:Key="RemoveSelectedFiles">Poista valitut tiedostot</system:String>
+    <system:String x:Key="MoveUp">ylös</system:String>
+    <system:String x:Key="MoveDown">alas</system:String>
+    <system:String x:Key="TrackName">kappaleen nimi</system:String>
+    <system:String x:Key="ImportTrack">Tuo kappaleen</system:String>
+    <system:String x:Key="Playlists">Soittolistat</system:String>
+    <system:String x:Key="RemoveAllTracks">Poista kaikki kappaleet</system:String>
+    <system:String x:Key="RemoveAllTracksQuestion">Oletko varma, että haluat poistaa kaikki kappaleet soittolistalta '{0}'?</system:String>
+    <system:String x:Key="Behaviour">Käytös</system:String>
+    <system:String x:Key="AdvancedView">Tarkennettu näkymä</system:String>
+    <system:String x:Key="EnableAdvancedView">Aktivoi tarkennettu näkymä</system:String>
+   
+    <system:String x:Key="ShowTime">näyttöajan:</system:String>
+    <system:String x:Key="Bitrate">bitrate</system:String>
+    <system:String x:Key="Remember">muistaa</system:String>
+    <system:String x:Key="AlsoAfterRestart">jopa uudelleenkäynnistyksen jälkeen</system:String>
+    <system:String x:Key="CanBeResetedInSettings">Voi olla asetukset nollataan</system:String>
+    <system:String x:Key="TotalReset">tehdä kaikkea nollaan</system:String>
+    <system:String x:Key="PlayWithHurricane">Pelaa Hurricane</system:String>
+    <system:String x:Key="System">Järjestelmä</system:String>
+    <system:String x:Key="ContextMenuItemForExtensions">pikavalikko merkintä tiedostopäätteet</system:String>
+    <system:String x:Key="CoverArt">Cover</system:String>
+    <system:String x:Key="LoadAlbumCoverFromInternet">Lataa puuttuvat</system:String>
+    <system:String x:Key="CoverQuality">Laatu</system:String>
+    <system:String x:Key="SaveAlbumCoverLocal">tallentaa cover paikallisesti</system:String>
+    <system:String x:Key="PreferFavoriteTracks">Sattumanvaraisesti toisto suosikkeja mieluummin.</system:String>
+    <system:String x:Key="Small">pieni</system:String>
+    <system:String x:Key="Medium">väliaine</system:String>
+    <system:String x:Key="Large">iso</system:String>
+    <system:String x:Key="Maximum">enimmäismäärä</system:String>
+    <system:String x:Key="File">tiedosto</system:String>
+    <system:String x:Key="Open">avoin</system:String>
+    <system:String x:Key="SaveAs">Tallenna nimellä</system:String>
+    <system:String x:Key="Save">Tallenna</system:String>
+    <system:String x:Key="TextFiles">tekstitiedostoja</system:String>
+    <system:String x:Key="AllFiles">kaikki tiedostot</system:String>
+    <system:String x:Key="Composers">säveltäjät</system:String>
+    <system:String x:Key="Artists">artisti</system:String>
+    <system:String x:Key="AlbumArtists">kirjailija</system:String>
+    <system:String x:Key="Copyright">tekijänoikeus</system:String>
+    <system:String x:Key="Comment">kommentti</system:String>
+    <system:String x:Key="Track">laulu</system:String>
+    <system:String x:Key="Disc">disc</system:String>
+    <system:String x:Key="General">Загальні</system:String>
+    <system:String x:Key="AddToSendTo">Lisää "lähettää"</system:String>
+    <system:String x:Key="ApiIsEnabled">aktivoida api</system:String>
+    <system:String x:Key="Port">portti</system:String>
+    <system:String x:Key="FailedToBindToPort">Virhe asetettaessa portit</system:String>
+    <system:String x:Key="Activated">aktivoitu</system:String>
+    <system:String x:Key="Deactivated">vammaiset</system:String>
+    <system:String x:Key="ThemeEditor">teema luoja</system:String>
+    <system:String x:Key="Name">nimi</system:String>
+    <system:String x:Key="Edit">muokata</system:String>
+    <system:String x:Key="SaveError">Valitettavasti virhe. Tarkista kirjoitetut.</system:String>
+    <system:String x:Key="SaveTagsError">Valitettavasti tapahtui virhe säästää päivä: "{0}"</system:String>
+    <system:String x:Key="TagEditor">Tag-editor</system:String>
+    <system:String x:Key="Change">Muutos</system:String>
+    <system:String x:Key="Favorites">suosikit</system:String>
+    <system:String x:Key="TrimTrackname">haku-teksti parantaa</system:String>
+    <system:String x:Key="ShowArtistAndTitle">Näytä artist nimen ja tittelin lista</system:String>
+    <system:String x:Key="Crossfade">Crossfade</system:String>
+    <system:String x:Key="Seconds">sekuntia</system:String>
+    
+    
+    <system:String x:Key="Latency">latenssi</system:String>
+    <system:String x:Key="DefaultLatency">100 ms (standardi)</system:String>
+    <system:String x:Key="PreferFavoriteDescription">Suosikkeja sekoitetaan kaksinkertainen todennäköisyys.</system:String>
+    
+    <system:String x:Key="TrimTracknameDescription">Otsikon tasalla ja laatua pois. Tämä voi lisätä osumatarkkuus.</system:String>
+
+    <system:String x:Key="Coding">Кодування</system:String>
+    <system:String x:Key="Teory">Теорія</system:String>
+    <system:String x:Key="Abramsone">Абрамсона</system:String>
+    <system:String x:Key="BCH">БЧХ</system:String>
+    <system:String x:Key="Appearance">Вигляд</system:String>
+    <system:String x:Key="Test">Тести</system:String>
+    <system:String x:Key="AppTheme">Тема додатка</system:String>
+    <system:String x:Key="KeyboardShortcuts">Гарячі клавіші</system:String>
+    <system:String x:Key="DDC">ДДК</system:String>
+    <system:String x:Key="AccentColorString">Колір</system:String>
+    <system:String x:Key="View">Інтерфейс</system:String>
+    <system:String x:Key="UseThinHeaders">Вузькі заголовки</system:String>
+    <system:String x:Key="TabControlTransition">Плавне відмалювання</system:String>
+    <system:String x:Key="Shenon">Шенона-Фано</system:String>
+    <system:String x:Key="Berger">Бергера</system:String>
+    <system:String x:Key="Greu">Грея</system:String>
+    <system:String x:Key="Cyclic">Циклічний</system:String>
+    <system:String x:Key="Systematic">Систематичний</system:String>
+    <system:String x:Key="PrimaryNonDouble">Первичні недвоїчні</system:String>
+    <system:String x:Key="CheckQ">Перевірка по модулю q</system:String>
+    <system:String x:Key="EasyReturt">Код з простим повторенням</system:String>
+    <system:String x:Key="Iterative">Ітеративний</system:String>
+    <system:String x:Key="Haffman">Хаффмена</system:String>
+    <system:String x:Key="Satellite">Коди супутників</system:String>
+    <system:String x:Key="Recurent">Рекурентний код</system:String>
+    <system:String x:Key="Entrophy">Кількість інформації та ентропія</system:String>
+    <system:String x:Key="ChannelCode">Канальні коди</system:String>
+    <system:String x:Key="BaseStartTest">Розпочати</system:String>
+    <system:String x:Key="NextTest">Далі</system:String>
+    <system:String x:Key="ExampleCoding">Приклад кодування</system:String>
+    <system:String x:Key="ExampleDecoding">Приклад декодування</system:String>
+    <system:String x:Key="Decoding">
+        Декодування
+    </system:String>
+    <system:String x:Key="DashedLine">
+        -----------
+    </system:String>
+    <system:String x:Key="AbramsoneTitle">Коди Абрамсона. Короткі теоретичні відомості</system:String>
+    <system:String x:Key="CodingAbramsone">Кодування</system:String>
+    <system:String x:Key="AbramsonePar1">
+        Циклічні коди відносяться до числа блокових систематичних кодів, в яких кожна комбінація кодується самостійно 
+        (у вигляді блоку) таким чином, що інформаційні (k) і контрольні (m) символи завжди знаходяться на певних місцях. 
+        В основу циклічного кодування покладено використання неприводимого многочлена P (x), 
+        який стосовно циклічним кодами називається утворюючим многочленом (поліномом). В якості інформаційних символів для побудови 
+        циклічних кодів беруться комбінації двійкового 
+        коду на всі сполучення. Циклічний код або закодоване повідомлення F (x) можна утворити двома способами:
+    </system:String>
+    
+    <system:String x:Key="AbramsoneList1">
+        1. Множенням однієї з комбінацій двійкового коду на всі сполучення (комбінація Q (x)),
+         що належить до тієї ж групи того ж коду, що і задана (комбінація G (x)), на який утворює многочлен P (x);
+    </system:String>
+    <system:String x:Key="AbramsoneList2">
+        2. Множенням заданої кодової комбінації G (x) на одночлен xm, що має ту ж ступінь,
+         що і утворить многочлен P (x), з додаванням до цього твору залишку від ділення
+         твори xm · G (x) на який утворює многочлен P (x). Таким чином, F (x) = Q (x) · P (x) = (xm) · G (x) + R (x).
+    </system:String>
+    <system:String x:Key="AbramsonePar2">
+        Коди Абрамсона відносяться до групи циклічних кодів, що дозволяють виявляти і виправляти поодинокі пачки помилок.
+        Отже, процедура кодування для кодів Абрамсона аналогічна стандартною процедурою кодування циклічних кодів.
+        Довжина кодової комбінації кодів Абрамсона n = 2h - 1, де h - ступінь неприводимого поліном P1 (x).
+        Утворює поліном P (x) = (1 + x) · P1 (x). Число інформаційних символів k = 2h - h - 2.
+        Ці вирази справедливі для мінімального кодового відстані dmin = 4, що дозволяє коригувати все поодинокі і все
+        суміжні подвійні помилки.
+    </system:String>
+
+    <system:String x:Key="AbramsonePar3">
+        Необхідно закодувати повідомлення 0110010110.
+    </system:String>
+    <system:String x:Key="AbramsonePar4">
+        Дан не приводиться поліном P1 = 10011, тобто P1 (x) = x4 + x + 1.
+         Утворює поліном в цьому випадку буде дорівнює P (x) = (1 + x) · (x4 + x + 1) = x5 + x4 + x2 + 1.
+    </system:String>
+    <system:String x:Key="AbramsonePar5">
+        Необхідно знайти залишок від ділення G (x) · x5 на який утворює поліном x5 + x4 + x2 + 1:
+    </system:String>
+
+    
+    <system:String x:Key="AbramsonePar6">
+        Таким чином, закодоване повідомлення F (x) = (xm) · G (x) + R (x) = 011001011011100. Курсивом виділено перевірочна частина.
+    </system:String>
+    <system:String x:Key="AbramsonePar7">
+        Ідея виявлення помилок в прийнятому циклічному коді полягає в тому, що при відсутності
+        помилок закодована комбінація F (x) ділиться на який утворює многочлен P (x) без залишку.
+        В цьому випадку контрольні символи відкидаються, а інформаційні символи використовуються за призначенням.
+        Якщо відбулося спотворення прийнятої кодової комбінації, то ця комбінація F (x) перетворюється в комбінацію H (x),
+        яку можна уявити як суму двох многочленів: H (x) = F (x) + E (x), де E (x) - многочлен помилок,
+        містить стільки одиниць, скільки елементів прийнятої комбінації не збігається з елементами в
+        переданої комбінації. Декодування циклічних кодів можна здійснювати наступним чином:
+    </system:String>
+
+
+    <system:String x:Key="AbramsoneList3">
+        1. Обчислити залишок (синдром) R (x). Якщо R (x) = 0, то комбінація прийнята без помилок.
+         Наявність залишку говорить про те, що комбінація прийнята спотвореною.
+    </system:String>
+    <system:String x:Key="AbramsoneList4">
+        2. Підрахувати вага залишку W. Якщо W
+           &lt; = s (s - число виправляє помилок), то прийняту комбінацію складають по модулю 2 із залишком і отримують
+         виправлену комбінацію.
+
+    </system:String>
+    <system:String x:Key="AbramsoneList5">
+        3. Якщо W> s, то проводиться циклічний зсув на один символ вліво і отримана після такого зсуву комбінація знову ділиться на який утворює многочлен. Якщо після цього W
+         &lt; = s, то циклічно зрушену комбінацію складають із залишком і потім після складання назад зрушують на один символ вправо (повертають на колишнє місце).
+         В результаті отримуємо виправлену комбінацію.
+    </system:String>
+
+    <system:String x:Key="AbramsoneList6">
+        4. Якщо після після циклічного зсуву на один символ, як і раніше W> s, то виробляються додаткові циклічні зрушення вліво.
+         При цьому після кожного зсуву здійснюється розподіл отриманої комбінації на P (X) і перевіряється вага залишку. при W
+         &lt; = s виконуються дії, зазначені в пункті 3, з тією лише різницею, що зворотних циклічних зрушень вправо необхідно буде зробити стільки, скільки було зроблено вліво.
+    </system:String>
+
+    <system:String x:Key="AbramsonePar8">
+        Закодована (прийнята) комбінація: 000111111110110.
+    </system:String>
+    <system:String x:Key="AbramsonePar9">
+        Непріводімий поліном P1 = 10011 = x4 + x + 1.
+    </system:String>
+    <system:String x:Key="AbramsonePar10">
+        Утворює поліном знаходиться наступним чином: P (x) = (1 + x) · (x4 + x + 1) = x5 + x4 + x2 + 1.
+    </system:String>
+    <system:String x:Key="AbramsonePar11">
+        Необхідно знайти залишок від ділення прийнятого повідомлення на який утворює поліном:
+    </system:String>
+
+    <system:String x:Key="AbramsonePar12">
+        Вага залишку - 2. Так як код Абрамсона здатний виправляти всі одиночні і
+         суміжні подвійні помилки (в даному випадку поодинокі біти залишку не суміжні),
+         необхідно виконати циклічний зсув початкового повідомлення на один біт вліво і повторити розподіл:
+    </system:String>
+
+    <system:String x:Key="AbramsonePar13">
+        Вага решти становить 4, а це означає
+         Необхідно продовжувати виконувати циклічний зсув і поділ.
+    </system:String>
+
+    <system:String x:Key="AbramsonePar14">
+        В даному випадку вага залишку - 2, і виправляються біти суміжні. Для отримання виправленої комбінації
+        необхідно скласти по модулю 2 зрушену комбінацію із залишком (в результаті виходить число 111111110110011)
+        і зрушити результат циклічно на три позиції вправо (011111111110110).
+        Відкинувши перевірочну частину, отримаємо остаточний результат - 0111111111.
+    </system:String>
+</ResourceDictionary>

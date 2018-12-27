@@ -1,0 +1,150 @@
+﻿<UserControl x:Class="Hurricane.Views.UserControls.Teory.AbramsoneTeory"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hurricane.Views.UserControls.Teory"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,2,0,-2.4">
+            <Grid>
+                <StackPanel Margin="10" Orientation="Vertical">
+                    <TextBlock Margin="0 5 0 0" HorizontalAlignment="Center" Text="{DynamicResource AbramsoneTitle}" />
+                    <TextBlock Margin="0 5 0 0" HorizontalAlignment="Center" FontWeight="Bold" Text="{DynamicResource Coding}"/>
+                    <TextBlock  TextWrapping="Wrap" Text="{DynamicResource AbramsonePar1}"/>
+
+                    <TextBlock Margin="10 5 0 0"  TextWrapping="Wrap" Text="{DynamicResource AbramsoneList1}"/>
+                    <TextBlock Margin="10 5 0 0"  TextWrapping="Wrap" Text="{DynamicResource AbramsoneList2}"/>
+
+                    <TextBlock Margin="0 5 0 0" HorizontalAlignment="Center" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar2}"/>
+                    <TextBlock Margin="0 5 0 0" Text="{DynamicResource ExampleCoding}" FontWeight="Bold"/>
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar3}"/>
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar4}"/>
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar5}"/>
+                    
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv}"/>
+                    <TextBlock Margin="10,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv2}"/>
+                    <TextBlock Margin="10 0 0 0" TextWrapping="Wrap" Text="{DynamicResource DashedLine}"/>
+                    <TextBlock Margin="40 0 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv3}"/>
+                    <TextBlock Margin="40 0 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv4}"/>
+                    <TextBlock Margin="40 0 0 0" TextWrapping="Wrap" Text="{DynamicResource DashedLine}"/>
+                    <TextBlock Margin="60 0 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv5}"/>
+                    <TextBlock Margin="60 0 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv6}"/>
+                    <TextBlock Margin="60 0 0 0" TextWrapping="Wrap" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="70 0 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv7}"/>
+                    <TextBlock Margin="70 0 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv8}"/>
+                    <TextBlock Margin="70 0 0 0" TextWrapping="Wrap" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="100 0 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDiv9}"/>
+
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar6}"/>
+                    <TextBlock Margin="0 5 0 0" HorizontalAlignment="Center" 
+                               FontWeight="Bold" TextWrapping="Wrap" Text="{DynamicResource Decoding}"/>
+
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar7}"/>
+                    <TextBlock Margin="10 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneList3}"/>
+                    <TextBlock Margin="10 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneList4}"/>
+                    <TextBlock Margin="10 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneList5}"/>
+                    <TextBlock Margin="10 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneList6}"/>
+                    
+                    <TextBlock FontWeight="Bold" Text="{DynamicResource ExampleDecoding}"/>
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar8}"/>
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar9}"/>
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar10}"/>
+                    <TextBlock Margin="0 5 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar11}"/>
+
+
+                    <TextBlock Margin="0 5 0 0" Text="{DynamicResource AbramsoneDecDiv}"/>
+                    <TextBlock Margin="30,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv1}"/>
+                    <TextBlock Margin="30,0,0,0" Text="{DynamicResource DashedLine}"/>
+                    <TextBlock Margin="50,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv2}"/>
+                    <TextBlock Margin="50,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv3}"/>
+                    <TextBlock Margin="50,0,0,0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="60,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv4}"/>
+                    <TextBlock Margin="60,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv5}"/>
+                    <TextBlock Margin="60,0,0,0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="80,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv6}"/>
+                    <TextBlock Margin="80,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv7}"/>
+                    <TextBlock Margin="80,0,0,0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="90,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv8}"/>
+                    <TextBlock Margin="90,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv9}"/>
+                    <TextBlock Margin="90,0,0,0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="100,0,0,0" TextWrapping="Wrap" Text="{DynamicResource AbramsoneDecDiv10}"/>
+
+                    <TextBlock Margin="5 0 0 0" Text="{DynamicResource AbramsonePar12}"/>
+
+                    <TextBlock Margin="0 0 0 0" Text="{DynamicResource AbramsoneDec11}"/>
+                    <TextBlock Margin="20 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="20 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="40 0 0 0" Text="{DynamicResource AbramsoneDec12}"/>
+                    <TextBlock Margin="40 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="40 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="50 0 0 0" Text="{DynamicResource AbramsoneDec13}"/>
+                    <TextBlock Margin="50 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="50 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="70 0 0 0" Text="{DynamicResource AbramsoneDec14}"/>
+                    <TextBlock Margin="70 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="70 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="80 0 0 0" Text="{DynamicResource AbramsoneDec15}"/>
+                    <TextBlock Margin="80 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="80 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="90 0 0 0" Text="{DynamicResource AbramsoneDec16}"/>
+                    <TextBlock Margin="90 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="90 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="100 0 0 0" Text="{DynamicResource AbramsoneDec17}"/>
+
+                    <TextBlock Margin="5 0 0 0" Text="{DynamicResource AbramsonePar13}"/>
+
+                    <TextBlock Margin="0 0 0 0" Text="{DynamicResource AbramsoneDec18}"/>
+                    <TextBlock Margin="0 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="0 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="20 0 0 0" Text="{DynamicResource AbramsoneDec19}"/>
+                    <TextBlock Margin="20 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="20 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="30 0 0 0" Text="{DynamicResource AbramsoneDec20}"/>
+                    <TextBlock Margin="30 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="30 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="60 0 0 0" Text="{DynamicResource AbramsoneDec21}"/>
+                    <TextBlock Margin="60 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="60 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="70 0 0 0" Text="{DynamicResource AbramsoneDec22}"/>
+                    <TextBlock Margin="70 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="70 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="80 0 0 0" Text="{DynamicResource AbramsoneDec23}"/>
+                    <TextBlock Margin="80 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="80 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="90 0 0 0" Text="{DynamicResource AbramsoneDec24}"/>
+                    <TextBlock Margin="90 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="90 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="100 0 0 0" Text="{DynamicResource AbramsoneDec25}"/>
+                    <TextBlock Margin="100 0 0 0" Text="{DynamicResource AbramsonePol}"/>
+                    <TextBlock Margin="100 0 0 0" Text="{DynamicResource DashedLine}"/>
+
+                    <TextBlock Margin="140 0 0 0" Text="11"/>
+
+                    <TextBlock Margin="5 0 0 0" TextWrapping="Wrap" Text="{DynamicResource AbramsonePar14}"/>
+
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

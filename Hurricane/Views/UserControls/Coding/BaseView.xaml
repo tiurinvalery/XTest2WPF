@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="Hurricane.Views.UserControls.Coding.BaseView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hurricane.Views.UserControls.Coding"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*">
+                
+            </RowDefinition>
+            <RowDefinition Height="*">
+
+            </RowDefinition>
+            <RowDefinition Height="*">
+
+            </RowDefinition>
+            <RowDefinition Height="*">
+
+
+            </RowDefinition>
+            <RowDefinition Height="*">
+
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" x:Name="NameTest" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="32"></TextBlock>
+        <TextBlock Grid.Row="1" x:Name="DateTest" Text="Current date of the test: " VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="25"></TextBlock>
+        <TextBlock Grid.Row="2" x:Name="BestMark" Text="Best Mark: " VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="25"></TextBlock>
+        <TextBlock Grid.Row="3" x:Name="Try" Text="{DynamicResource Trynumber}" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="25"></TextBlock>
+        <Button Grid.Row="4" x:Name="StaertTest" Background="LawnGreen" Width="110" Content="{DynamicResource BaseStartTest}" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="16" ></Button>
+    </Grid>
+</UserControl>
